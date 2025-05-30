@@ -151,14 +151,16 @@ button:focus {
   }
 }
 .navbar-brand {
-  color: rgb(250, 250, 250) !important;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 70px;       /* Adjust height as needed */
+  width: auto;        /* Maintain aspect ratio */
+  object-fit: contain;
+  margin-top: 5px;    /* Optional: adjust vertical alignment */
 }
-
 .navbar-nav .nav-link {
   color: white !important;
   padding-right: 1rem !important;
@@ -305,9 +307,25 @@ button:focus {
   }
 }
 
-.myAvtar {
+/* .myAvtar {
   justify-content: center !important;
   padding-top: 9em !important;
+} */
+
+.myAvtar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6em !important; /* or tweak value */
+}
+.avatar-img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: -30px;
+  border: none;
+  box-shadow: none;
 }
 
 @media (max-width: 767px) {

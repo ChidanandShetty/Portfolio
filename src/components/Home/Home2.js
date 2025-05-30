@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+// import myImg from "../../Assets/avatar.svg"; // Replace with your own image if needed
+import myImg from "../../Assets/myavatar.png"; 
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -19,42 +20,25 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript and Go. </b>
-              </i>
+              I’m a passionate <b className="purple">Front-End Developer</b> with over{" "}
+              <b className="purple">6 years</b> of experience crafting fast, scalable, and user-friendly web apps.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
+              I specialize in building sleek UIs using <b className="purple">React.js, JavaScript, TypeScript, and CSS3</b>.
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+              I love working on real-time dashboards, integrating REST APIs with <b className="purple">Axios</b>, and handling state using <b className="purple">Redux & Context API</b>.
+              <br />
+              <br />
+              You'll also find me exploring <b className="purple">Chart.js</b> and <b className="purple">D3.js</b> to turn data into beautiful, interactive visualizations.
+              <br />
+              <br />
+              Currently building at Raymond Corporation 🚚, and always open to collaborations!
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={myImg} className="avatar-img" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
@@ -67,37 +51,37 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/chidanandshetty"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiFillGithub />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://twitter.com/" // Optional: replace or remove
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiOutlineTwitter />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/chris-shetty/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.instagram.com/" 
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
@@ -112,4 +96,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;
